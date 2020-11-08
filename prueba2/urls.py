@@ -21,9 +21,14 @@ from django.contrib import admin
 from django.urls import path
 from prueba2.views import Inicio
 from prueba2.views import QuienesSomos
+from prueba2.views import Contacto
+from prueba2.views import Galeria
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Inicio/',Inicio),
     path('QuienesSomos/',QuienesSomos),
+    path('Galeria/',Galeria),
+    path('Contacto/',Contacto),
+    
 ]
