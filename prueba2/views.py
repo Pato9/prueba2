@@ -23,3 +23,6 @@ def QuienesSomos(request):
     documento = template.render(contecto)
     return HttpResponse(documento)
 
+#esto es una prueba
+def suma(a,b):
+    return a + b
