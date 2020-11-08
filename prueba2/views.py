@@ -15,3 +15,11 @@ def Inicio(request):
     documento = template.render(contexto)
     return HttpResponse(documento)
 
+def QuienesSomos(request):
+    plantillaQuines = open("prueba2/plantillas/Quienes-somos.html")
+    template = Template(plantillaQuines.read())
+    plantillaQuines.close()
+    contecto = Context()
+    documento = template.render(contecto)
+    return HttpResponse(documento)
+
