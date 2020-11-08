@@ -23,6 +23,7 @@ from prueba2.views import Inicio
 from prueba2.views import QuienesSomos
 from prueba2.views import Contacto
 from prueba2.views import Galeria
+from prueba2.views import ModeloMedida
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,5 +31,6 @@ urlpatterns = [
     path('QuienesSomos/',QuienesSomos),
     path('Galeria/',Galeria),
     path('Contacto/',Contacto),
+    path('Modelos/Modelo-medida/',ModeloMedida)
     
 ]
