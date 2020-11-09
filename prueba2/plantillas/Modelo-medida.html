@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    {% include 'bootstrapcss.html' %}
+    <link rel="stylesheet" href="../static/css/modelo-medida.css">
 </head>
 <body>
-    Modelo a medida
+   <header>
+       {% include 'Navbar.html' %}
+   </header>
+   <section>
+    <div class="calculo-medida">
+        <div class="info">
+
+        </div>
+        <div class="calculo">
+            <div class="opcion-pieza">
+                <select name="piezas" id="piezas">
+                    <option value="0">Seleccione piezas...</option>
+                </select>
+            </div>
+            <div class="opcion-bano">
+                <select name="banhios" id="banho">
+                    <option value="0">Seleccione baños...</option>
+
+                </select>
+            </div>
+            <div class="calcula-total">
+                <button id="calcular">Calcular</button>
+            </div>
+            <p id="prueba"></p>
+        </div>
+    </div>
+
+   </section>
+
+   <!--JS-->
+   {% include 'bootstrapjs.html' %}
+   <script>
+    //cargar combobox piezas
+    function cargaPieza(){
+        
+        let piezaArray = ["1","2","3","4"];
+        let comboPieza = document.getElementById('piezas');
+
+        for ( i = 0; i < piezaArray.length; i++) {
+            comboPieza.innerHTML += "<option value='"+ piezaArray[i]+"'>" + piezaArray[i] + "</option>";    
+            
+        }
+    }
+
+    //cargar combobox baños
+    function cargaBanho(){
+
+        let banhoArray = ["1","2","3","4"];
+        let comboBanho = document.getElementById('banho');
+
+        for(i = 0; i < banhoArray.length; i++ ){
+            comboBanho.innerHTML += "<option value='"+banhoArray[i]+"'> " + banhoArray[i] +"</option>";
+        }
+    }
+
+    cargaPieza();
+    cargaBanho();
+
+
+   
+   //valor precio inicial de la construccion de la casa
+    var precioInicial = 2500000;
+
+    var calcular = document.getElementById('calcular');
+    calcular.addEventListener("click", ()=>{
+        let precio = document.getElementById('prueba');
+
+        var pieza = document.getElementById('piezas').value;
+        var banho = document.getElementById('banho').value;
+        
+        //validar ingreso
+        if(pieza == 0 || banho == 0){
+            precio.innerHTML = "Selecione un campo";
+        }else if(pieza>0 & banho>0){
+            let valorPieza = 250000;
+            let valorBanho = 350000;
+            let  total = precioInicial+(valorPieza*pieza+valorBanho*banho);
+            precio.innerHTML = total;
+        }
+
+    })
+
+   </script>
+
 </body>
 </html>
