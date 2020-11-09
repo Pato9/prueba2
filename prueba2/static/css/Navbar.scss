@@ -1,0 +1,14 @@
+$segundo : #297fb9;
+
+nav{
+    background: $segundo;
+    
+
+    a{
+        color: white;
+    }
+    a:hover{
+        color: grey;
+        transition: .3s ;
+    }
+}
