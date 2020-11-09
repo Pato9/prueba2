@@ -44,6 +44,7 @@ def Galeria(request):
     documento = template.render(contexto)
     return HttpResponse(documento) 
 
+#Modelo medida vista
 def ModeloMedida(request):
     plantillaModeloMedida = open("prueba2/plantillas/Modelo-medida.html")
     template = Template(plantillaModeloMedida.read())
@@ -52,3 +53,11 @@ def ModeloMedida(request):
     documento = template.render(contexto)
     return HttpResponse(documento)
 
+#modelo metraje vista
+def modeloMetraje(request):
+    plantillaMetraje = open("prueba2/plantillas/modelo-metraje.html")
+    template = Template(plantillaMetraje.read())
+    plantillaMetraje.close()
+    contexto = Context()
+    documento =  template.render(contexto)
+    return HttpResponse(documento)
