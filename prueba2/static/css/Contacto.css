@@ -11,4 +11,11 @@
   display: block;
   width: 100%;
 }
+
+@media screen and (max-width: 768) {
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
 /*# sourceMappingURL=Contacto.css.map */
