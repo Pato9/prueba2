@@ -1,0 +1,41 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+
+.columns{
+    margin: 15px 25px;
+}
+
+h1{
+    padding: 1rem;
+}
+
+.lista-platillos{
+    border : 1px solid grey;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+
+    
+
+    .encabezado{
+        border-bottom: 1px solid grey;
+    }
+    .columns{
+        margin: 10px 25px;
+    }
+
+    .lista-casas{
+        width: 80%;
+        padding: 2em;
+        margin: 0 auto;
+        
+    }
+
+    a{
+        display: block;
+    }
+
+}

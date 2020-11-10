@@ -42,4 +42,10 @@ footer {
   background: #2c3e50;
   height: 30vh;
 }
+
+@media screen and (min-width: 750px) {
+  body {
+    background: red;
+  }
+}
 /*# sourceMappingURL=index.css.map */

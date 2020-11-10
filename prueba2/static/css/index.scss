@@ -8,7 +8,6 @@ $segundo : #2c3e50;
 
 
 
-
 .destacadas{
     padding: 1.5em;
     .card{
@@ -50,3 +49,14 @@ footer{
     background: $segundo;
     height: 30vh;
 }
+
+
+
+//responsive 
+@media screen and ( min-width : 750px ){
+
+    body{
+        background: red;
+    }
+
+} 
