@@ -13,11 +13,21 @@
     }
 }
 
-@media screen and (max-width :768)
+.informacion{
+    position: relative;
+    overflow: hidden;
+    padding: 1em;
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width :768px)
 {
-    iframe {
-        max-width: 100%;
-        height: auto;
-       }
 }
 

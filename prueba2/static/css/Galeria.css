@@ -60,7 +60,7 @@ input:nth-of-type(2):hover {
   display: block;
 }
 
-@media screen and (max-height: 768px) {
+@media (max-height: 1024px) {
   .lista-platillos {
     width: 100%;
     margin: 0;

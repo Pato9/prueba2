@@ -50,10 +50,7 @@ footer a {
   padding: 20px;
 }
 
-@media (max-height: 768px) {
-  .card-table {
-    width: 500vh;
-  }
+@media (max-width: 1024px) {
   .text-job {
     top: 20%;
   }
@@ -73,7 +70,7 @@ footer a {
 
 @media (max-width: 768px) {
   .card-table {
-    width: 150vh;
+    width: 300%;
   }
 }
 /*# sourceMappingURL=index.css.map */

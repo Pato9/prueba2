@@ -60,7 +60,7 @@
   font-size: 30px;
 }
 
-@media (max-height: 768px) {
+@media (max-width: 1024px) {
   .calculo-medida {
     width: 100%;
     margin: 50px auto;
