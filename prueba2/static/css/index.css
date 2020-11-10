@@ -12,14 +12,14 @@
 }
 
 .portafolio {
-  height: 50vh;
+  height: 60vh;
   background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .portafolio .info-port {
   text-align: center;
-  top: 20%;
+  top: 9%;
   height: auto;
   width: 50%;
   margin: 0 auto;
@@ -40,6 +40,24 @@
 
 footer {
   background: #2c3e50;
-  height: 30vh;
+  height: 50vh;
+}
+
+@media (max-height: 768px) {
+  .card-table {
+    width: 500vh;
+  }
+  .text-job {
+    top: 20%;
+  }
+  .footer-logo {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-table {
+    width: 150vh;
+  }
 }
 /*# sourceMappingURL=index.css.map */
