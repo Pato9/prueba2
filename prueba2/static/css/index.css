@@ -60,4 +60,10 @@ footer {
     width: 150vh;
   }
 }
+
+@media screen and (min-width: 750px) {
+  body {
+    background: red;
+  }
+}
 /*# sourceMappingURL=index.css.map */

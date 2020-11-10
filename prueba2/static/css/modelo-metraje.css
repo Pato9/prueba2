@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.calculo-medida {
+.calculo-metraje {
   border: 1.5px solid #b6b6b6;
   border-radius: 5px;
   width: 70%;
@@ -13,23 +13,23 @@
           justify-content: center;
 }
 
-.calculo-medida .info {
+.calculo-metraje .info {
   padding: 20px;
   text-align: center;
   border-bottom: 1.5px solid #b6b6b6;
 }
 
-.calculo-medida .calculo {
+.calculo-metraje .calculo {
   margin: 0 auto;
   border-bottom: 1.5px solid #b6b6b6;
   padding: 5rem 6rem;
 }
 
-.calculo-medida .calculo section {
+.calculo-metraje .calculo section {
   height: 100px;
 }
 
-.calculo-medida .calculo button {
+.calculo-metraje .calculo button {
   background: cornflowerblue;
   color: white;
   width: 50%;
@@ -40,11 +40,11 @@
   display: block;
 }
 
-.calculo-medida .calculo button:hover {
+.calculo-metraje .calculo button:hover {
   background: white;
   color: cornflowerblue;
   -webkit-transition: .5s;
   transition: .5s;
   border: 1px solid cornflowerblue;
 }
-/*# sourceMappingURL=modelo-medida.css.map */
+/*# sourceMappingURL=modelo-metraje.css.map */
