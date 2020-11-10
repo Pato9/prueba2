@@ -41,3 +41,31 @@ section{
 
  
 }
+
+@media (max-height : 768px)
+{
+    section{
+        width: 100%;
+        height: 100vh;
+        display: inline;
+        padding: 50px;
+        text-align: center;
+        
+        .info-presentacion{
+            margin-top: 50px;
+        }
+
+      
+
+        .presentacion{
+            padding: 1em;
+        }
+        
+            .ilustracion{
+                display: none;
+                visibility: hidden;
+                
+            }
+        
+    }
+}

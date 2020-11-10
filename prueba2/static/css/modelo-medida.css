@@ -47,4 +47,34 @@
   transition: .5s;
   border: 1px solid cornflowerblue;
 }
+
+.calculo-medida .resultado {
+  width: 100%;
+  padding: 1.5em;
+  height: auto;
+}
+
+.calculo-medida .resultado p {
+  font-weight: bold;
+  float: right;
+  font-size: 30px;
+}
+
+@media (max-height: 768px) {
+  .calculo-medida {
+    width: 100%;
+    margin: 50px auto;
+  }
+  .calculo-medida .info {
+    width: 100%;
+    display: block;
+  }
+  .calculo-medida .calculo {
+    padding: 1em;
+  }
+  .calculo-medida button {
+    width: 100%;
+    display: block;
+  }
+}
 /*# sourceMappingURL=modelo-medida.css.map */

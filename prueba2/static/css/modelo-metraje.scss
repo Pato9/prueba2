@@ -8,12 +8,12 @@
     border-radius: 5px;
     width: 70%;
     margin: 150px auto;
-    justify-content: center;
+    
   
 
    
     .info{
-        padding: 20px ;
+        padding: 10px ;
         text-align: center;
         border-bottom: 1.5px solid rgb(182, 182, 182);
     }
@@ -21,11 +21,24 @@
     .calculo{
         margin: 0 auto;
         border-bottom: 1.5px solid rgb(182, 182, 182);
-        padding: 5rem 6rem;
+        padding: 1rem 6rem;
+        width: 50%;
+      
         section{
             height: 100px;
         }
-    
+        
+        h5{
+            font-size: 25px;
+        }
+
+        input{
+            width: 100%;
+        }
+
+        small{
+            margin: 20px auto 10px auto;
+        }
 
         button{
             
@@ -49,7 +62,43 @@
 
  
   
-   
+    .resultado{
+        
+        width: 100%;
+        padding: 1.5em;    
+        height: auto;    
+      p{
+          font-weight: bold;
+          float: right;
+          font-size: 30px;
+          
+           
+      }
+  }
         
 
+}
+
+
+@media (max-height : 768px)
+{
+    .calculo-metraje{
+        width: 100%;
+        margin: 50px auto;
+        padding : 0;
+        .info{
+            width: 100%;
+            display: block;
+        }
+
+        .calculo{
+            padding: 1em;
+            width: 100%;
+        }
+
+        button{
+            width: 100%;
+            display: block;
+        }
+    }
 }

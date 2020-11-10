@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.formulario {
+  padding: .5em;
+}
+
+.formulario button {
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=Contacto.css.map */

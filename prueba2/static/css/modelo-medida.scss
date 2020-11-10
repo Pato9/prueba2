@@ -48,8 +48,41 @@
     }
 
  
-  
+  .resultado{
+        
+        width: 100%;
+        padding: 1.5em;    
+        height: auto;    
+      p{
+          font-weight: bold;
+          float: right;
+          font-size: 30px;
+          
+           
+      }
+  }
    
         
 
+}
+
+@media (max-height : 768px)
+{
+    .calculo-medida{
+        width: 100%;
+        margin: 50px auto;
+        .info{
+            width: 100%;
+            display: block;
+        }
+
+        .calculo{
+            padding: 1em;
+        }
+
+        button{
+            width: 100%;
+            display: block;
+        }
+    }
 }

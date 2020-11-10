@@ -40,4 +40,24 @@ section .ilustracion img {
   margin: 0 auto;
   margin-top: 160px;
 }
+
+@media (max-height: 768px) {
+  section {
+    width: 100%;
+    height: 100vh;
+    display: inline;
+    padding: 50px;
+    text-align: center;
+  }
+  section .info-presentacion {
+    margin-top: 50px;
+  }
+  section .presentacion {
+    padding: 1em;
+  }
+  section .ilustracion {
+    display: none;
+    visibility: hidden;
+  }
+}
 /*# sourceMappingURL=quienes-somos.css.map */

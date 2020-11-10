@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
          </div>
          <div class="calculo">
             <h5>Indique la cantidad de metros cuadrados</h5>
-            <input type="text" id="mts">
+            <input type="number" id="mts" onkeypress="return validarNumeros(event)">
             <small id="emailHelp" class="form-text text-muted">Recuerde que el ingreso minimo son del 20 metros cuadrados.</small>
             <button id="calcular">Calcular</button>
             <p id="error"></p>
@@ -55,6 +55,9 @@
             }else{
                 mensaje.innerHTML = CalculoMetroCuadrado(metros);
             }
+
+        //validar ingreso de numeros en el campo
+   
             
         });
 
